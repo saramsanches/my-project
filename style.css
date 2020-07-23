@@ -1,0 +1,37 @@
+body {
+  margin-top: 20px;
+}
+
+h1 {
+  color: #ff9595;
+}
+
+h2,
+h3 {
+  color: #342b38;
+}
+h3 {
+  text-align: center;
+}
+
+p {
+  color: #80bdab;
+  text-align: center;
+}
+
+.city {
+  text-align: center;
+}
+.emojiToday {
+  font-size: 50px;
+  text-align: center;
+}
+
+.todayTemperature {
+  font-size: 50px;
+  text-align: left;
+}
+
+.todayMinMax {
+  text-align: center;
+}
