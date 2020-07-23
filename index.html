@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card frame">
+            <div class="card-body">
+
+
+                <h1>
+                    Weather App
+                </h1>
+                </br>
+                <form id="city-form">
+                    <input type="text" placeholder="Enter city" autocomplete="off" autofocus id="enterCity" />
+                    <input type="submit" value="Search" />
+
+                </form>
+                <br />
+                <button class="position">Current Position</button>
+                </br>
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="city">
+                            Lisbon, Portugal
+                        </h2>
+                        <h3 class=hours>
+                            Date and Time
+                        </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <p class="emojiToday">
+                            ☀️
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <p class="todayTemperature">
+                            26ºC
+                        </p>
+
+                        <div class="row">
+                            <p class="todayMinMax">
+                                16ºC | 29ºC
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <p><span id="hum">Humidity: 52%</span>
+
+                            <br /><span id="pred">Prediction: Sun</span>
+                            <br /><a href="#" id="linkCelsius"><span class="celsius">ºC</span></a> | <a href="#"
+                                id="linkFahrenheit"><span class="fahrenheit">F</span></a>
+                        </p>
+                    </div>
+                </div>
+                </br>
+                <h2>
+                    Next five days:
+                </h2>
+
+                <div class="row">
+                    <div class="col-md">
+                        <p>
+                            Tuesday </br>☀️</br>18ºC|28ºC
+                        </p>
+                    </div>
+                    <div class="col-md">
+                        <p>
+                            Wednesday </br>🌤️</br>16ºC|27ºC
+                        </p>
+                    </div>
+                    <div class="col-md">
+                        <p>
+                            Thursday </br>☀️</br>16ºC|24ºC
+                        </p>
+                    </div>
+                    <div class="col-md">
+                        <p>Friday </br>☀️</br>16ºC|25ºC</p>
+                    </div>
+                    <div class="col-md">
+                        <p>Saturday </br>☀️</br>19ºC|31ºC</p>
+                    </div>
+                </div>
+                <p class="division">
+                    <hr>
+                </p>
+                <div class="row">
+
+                    <div class="col-3">
+                        <button type="button" class="btn btn-info">Paris</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-info">London</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-info">New York</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-info">Madrid</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
